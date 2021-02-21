@@ -9,6 +9,12 @@ class LeftButton:
 		return win32api.GetKeyState(0x01)
 
 	def _state_changed(self, callback):
+		"""
+		Returns whether the button's state has changed.	
+
+		Keyword arguments:
+		callback -- in case the state has changed, the function testing its value
+		"""
 		new_state = LeftButton._current_state()
 	
 		if new_state != self._state:
