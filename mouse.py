@@ -1,7 +1,22 @@
 import win32api
 
-def left_button_state():
-	return win32api.GetKeyState(0x01)
+class LeftButton:
+	def __init__(self):
+		self._state = self._current_state()
+	
+	@staticmethod
+	def _current_state():
+		return win32api.GetKeyState(0x01)
 
-def has_left_button_been_released(state):
-	return state >= 0
+	@property
+	def released(self):
+		new_state = LeftButton._current_state()
+	
+		if new_state != self._state:
+			self._state = new_state
+
+			if self._state >= 0:
+				return True
+		
+		return False
+	
