@@ -8,15 +8,17 @@ class LeftButton:
 	def _current_state():
 		return win32api.GetKeyState(0x01)
 
-	@property
-	def released(self):
+	def _state_changed(self, callback):
 		new_state = LeftButton._current_state()
 	
 		if new_state != self._state:
 			self._state = new_state
 
-			if self._state >= 0:
+			if callback(self._state):
 				return True
 		
 		return False
 	
+	@property
+	def released(self):
+		return self._state_changed(lambda state: state >= 0)
