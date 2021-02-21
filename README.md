@@ -2,7 +2,7 @@
 
 This program starts a 15-second timer every time the user clicks anywhere inside Spotify. When the timer runs out, a beep is played.
 
-The motivation for this project came from my weekly need to update my personal Spotify playlist. I have a playlist called "Fresh" where I keep the songs I'm currently listening to, and every week I need to update it, removing songs I don't feel like listening anymore to and adding new ones. However I don't like having to listen to all of them all over again to see if I'm sick of a particular song or not, so I came up with this thing that I start the song, listen to the first 15 seconds and then do the same skipping ahead from 1/4, 1/5 and 3/4 of the song. And, so I don't have to use a manual timer or mentally calculate when 15 seconds have passed, I created this project that will count down from 15 seconds everytime I click inside Spotify, i.e. when I skip ahead on the timeline. When the timer runs out, it plays a beep to warn me. Call me lazy. :)
+The motivation for this project came from my weekly need to update my personal Spotify playlist. I have a playlist called "Fresh" where I keep the songs I'm currently listening to. Every week I need to update it, removing songs I don't feel like listening to anymore and adding new ones. However I don't like having to listen to all of them in their entirety to see if I'm sick of a particular song or not, so I came up with this thing that I start the song, listen to the first 15 seconds and then do the same skipping ahead from 1/4, 1/5 and 3/4 of the song. And, so that I don't have to use a manual timer or mentally calculate when 15 seconds have passed, I created this program, that will count down from 15 seconds everytime I click inside Spotify, i.e. when I skip ahead on the timeline. When the timer runs out, it plays a beep to warn me. Call me lazy. :)
 
 ## Instalation
 
@@ -21,7 +21,7 @@ If you have Python installed, just run ```main.py```. The program will restart a
 
 ## Contributing
 
-If you have any suggestions to improve this program, feel free to say it.
+If you have any suggestions to improve this program, feel free to suggest them.
 
 ## License
 
