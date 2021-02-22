@@ -8,7 +8,7 @@ The motivation for this project came from my weekly need to update my personal S
 
 To run this program, you need to have at least Python 3.6 installed. This program will only run on Windows, since it depends on platform-specific modules.
 
-These are the modules you're going to need, which can be installed by running ```pip install <module>``` on the console:
+These are the modules you're going to need, which can be installed by running ```pip install <module>``` at the console:
 
 * ```psutil```,
 * ```win32api```,
@@ -17,7 +17,7 @@ These are the modules you're going to need, which can be installed by running ``
 
 ## Usage
 
-If you have Python installed, just run ```main.py```. The program will restart a 15-second timer every time you click inside Spotify and play a beep sound when it runs out.
+If you have Python installed, just run ```main.py```. The program will start a 15-second timer every time you click inside Spotify and play a beep when it runs out.
 
 ## Contributing
 
