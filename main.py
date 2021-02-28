@@ -13,6 +13,11 @@ if __name__ == "__main__":
 	button = LeftButton()
 	timer = RestartableTimer(DURATION, beep)
 
+	print(
+		f"Click anywhere inside \"{PROCESS_NAME}\" "
+		f"to start the {DURATION}-second timer.\n"
+	)
+
 	while True:
 		if button.released:
 			if process_name(foreground_window()) == PROCESS_NAME:
